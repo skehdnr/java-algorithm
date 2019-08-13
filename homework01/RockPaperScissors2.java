@@ -36,6 +36,7 @@ public class RockPaperScissors2 {
 		case "0" + 1 : System.out.println("게임종료");return;
 		case "0" + 2 : System.out.println("게임종료");return;
 		case "0" + 3 : System.out.println("게임종료");return;
+		default : System.out.println("잘못입력했습니다");break;
 		}
 		System.out.println(rps);
 	}
