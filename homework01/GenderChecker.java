@@ -5,7 +5,7 @@ public class GenderChecker {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("국적과 성별을 나타냅니다");
+		System.out.println("출생 정보를 나타냅니다");
 		System.out.println("주민번호를 입력해 주세요");
 		String num ="";
 		num = scanner.next();
