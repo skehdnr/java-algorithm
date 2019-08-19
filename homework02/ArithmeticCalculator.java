@@ -10,7 +10,6 @@ public class ArithmeticCalculator {
 		String b = String.valueOf(a);
 		switch (a) {
 		case 0 : System.out.println("종료 되었습니다");return;
-		default : System.out.println("잘못된 입력입니다");break;
 		}
 		System.out.println("첫번째 숫자를 입력해 주세요");
 		int num1 =scanner.nextInt();

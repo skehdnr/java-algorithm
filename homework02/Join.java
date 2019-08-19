@@ -15,7 +15,7 @@ public class Join {
 		String name = scanner.next();
 		System.out.println("생년월일 6자리를 입력해 주세요. ex)123456");
 		int bir = scanner.nextInt();
-		System.out.println("성인여부(성인true,미성년false)");
+		System.out.println("성인여부(성인 1. 미성년2.)");
 		String adult= scanner.next();
 		System.out.println("키를 입력해 주세요");
 		double height = scanner.nextDouble();

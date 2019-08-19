@@ -2,28 +2,31 @@ package homework02;
 
 import java.util.Scanner;
 
+import com.sun.xml.internal.ws.api.streaming.XMLStreamReaderFactory.Default;
+
 public class ScoreCalc {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-	
-		String sequence = "";
-		int add= 0 , add1= 0 , count = 0 ;
+		
+		int sum = 0;
+		int average = 0;
+		String sequence ="";
 		
 		while(true) {
-		System.out.println("더하시려는 숫자를 입력하세요.(종료는 -1)");
-		int num = scanner.nextInt();
-		if(num != -1) {
-			sequence += num + " + " ; 
-			serise += num ;
-			count++;
-		}else { break;	}
-			
+			System.out.println("더하려는 숫자를 입력해 주세요 (종료는 -1)");
+			int input = scanner.nextInt();
+			if (input==-1) {
+				sequence += "="; break;
+			}else if (input!=-1) {
+				sequence += input + "+";
+				sum += input;
+				average++;
+			}
+			}System.out.printf("종료\\n 현재까지의 누적값은 %d 이고, 평균은 %d 입니다.\n",sequence,sum,sum/average);
 	}
-		avge = serise / count ; 
-		System.out.printf("현재까지의 누적값은  %s= %d 이고, 평균은 %d 입니다.(소수점이하 절삭)", add, add1, average);break;
 	}
-}
+
 //To. 개발자님
 //안녕하세요. 비트대학입니다.
 //사용자가 입력한 숫자를 더하다가 끝내고 싶은 순간에 스톱이 되면서 그동안 입력된

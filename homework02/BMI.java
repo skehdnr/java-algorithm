@@ -10,15 +10,17 @@ public class BMI {
 		int weight = scanner.nextInt();
 		System.out.println("키를 입력해 주세요");
 		int height = scanner.nextInt();
+		String eval ="";
 		
 		double bmi =  weight/((height*0.01)*(height*0.01));
 		System.out.printf("%.2f \n",bmi);
 		
 		if(bmi>30.0) {System.out.println("고도비만 입니다");			
-		}else if (bmi>25.0) {System.out.println("비만 입니다");
-		}else if (bmi>23.0) {System.out.println("과체중 입니다");
-		}else if (bmi>18.5) {System.out.println("정상 입니다");
-		}else {System.out.println("저체중 입니다");}
+		}else if (bmi>25.0) {eval="비만 ";
+		}else if (bmi>23.0) {eval="과체중 ";
+		}else if (bmi>18.5) {eval="정상 ";
+		}else {eval="저체중";
+		}System.out.printf("%s의bmi는%s,입니다\n",name,eval);
 	}
 
 }
