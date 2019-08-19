@@ -12,7 +12,7 @@ public class BMI {
 		int height = scanner.nextInt();
 		
 		double bmi =  weight/((height*0.01)*(height*0.01));
-		System.out.println(Math.round(bmi*100)/100.0);
+		System.out.printf("%.2f \n",bmi);
 		
 		if(bmi>30.0) {System.out.println("고도비만 입니다");			
 		}else if (bmi>25.0) {System.out.println("비만 입니다");
