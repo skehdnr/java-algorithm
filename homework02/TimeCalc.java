@@ -6,16 +6,6 @@ public class TimeCalc {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("계산하고 싶은 초를 입력해 주세요");
 		int second = scanner.nextInt();
-		/*int h = second/3600;
-		int m = second/60;
-		int s = second%60;
-*/
-		/*int s = second;
-		int m = s/60;
-		int h = m/60;
-			if (second==s) {
-				System.out.println("초 입니다");
-			}else /*System.out.println(a+b+"초입니다");*/
 		int h = second/3600;
 		int m = second%3600/60;
 		int s = second%3600%60;

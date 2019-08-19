@@ -19,12 +19,12 @@ public class Ranking {
 		 }
 		 for(int i = 0; i < 3 ; i++) { 
 			 for(int j = 0 ; j < 3 ; j++) {
-				 if(records[i]< records[j])
+				 if(records[i]> records[j])
 					 rank[i] = rank[i]+1;
 			 }
 		 }
 		 for(int i = 0 ; i < 3 ; i++) { 
-			 System.out.printf("%d등 : %s 선수기록 (%.1f)\n",i+1,player[i],records[i]);
+			 System.out.printf("%d등 : %s 선수기록 (%.1f)\n",rank[i],player[i],records[i]);
 		 }
 	}
 

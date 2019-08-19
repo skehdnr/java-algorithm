@@ -16,14 +16,15 @@ public class ScoreCalc {
 		while(true) {
 			System.out.println("더하려는 숫자를 입력해 주세요 (종료는 -1)");
 			int input = scanner.nextInt();
-			if (input==-1) {
+			if (input==-1) { 
 				sequence += "="; break;
-			}else if (input!=-1) {
-				sequence += input + "+";
-				sum += input;
-				average++;
-			}
-			}System.out.printf("종료\\n 현재까지의 누적값은 %d 이고, 평균은 %d 입니다.\n",sequence,sum,sum/average);
+			}else if (sum==0) {
+				sequence += input; 
+			}else {
+				sequence +=  "+" + input;
+			}average++;
+			sum+=input;
+			}System.out.printf("종료\n 현재까지의 누적값은 %s %d 이고, 평균은 %d 입니다.\n",sequence,sum,sum/average);
 	}
 	}
 
