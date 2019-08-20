@@ -13,7 +13,7 @@ public class Tax {
 		System.out.println("현재 세율을 입력해 주세요");
 		Double tax = scanner.nextDouble();
 
-		Double value = money/tax;
+		Double value = money*tax*0.01;
 
 		System.out.printf("연봉 %d 만원을 받으시는 %s 님께서 납부할 세금은 %.2f 만원 입니다 \n",money,name,value);
 		//System.out.printf("연봉 "+ money +" 만원을 받으시는 "+ name + "님께서 납부할 세금은 " + value + " 만원 입니다 \n");
