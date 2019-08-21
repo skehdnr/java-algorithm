@@ -1,11 +1,17 @@
 package study05;
 import java.util.Scanner;
-public class Engine {
+import javax.swing.JOptionPane;
 
+
+
+
+public class Engine {
+	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		Member member = null;
 		Service service = new Service();
+		
 		while(true) {
 			System.out.println("0.종료 1.Join 2.정보보기 3.아이디찾기 4.BMI 5.ReportCard 6.Tax");
 			switch(scanner.nextInt()) {
@@ -42,7 +48,7 @@ public class Engine {
 				System.out.println(member.toString());
 			break;
 			case 3 : 
-				System.out.println("이름을 입력하면 아이디 알려줌");
+				System.out.println("이름과 주민번호 입력 하면 아이디 알려줌");
 				String searchName = scanner.next();
 				String searchId = scanner.next();
 				if(searchName.equals("a") &&
