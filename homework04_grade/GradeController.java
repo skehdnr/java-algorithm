@@ -16,9 +16,9 @@ public class GradeController {
 			String kor=(JOptionPane.showInputDialog("국어점수 입력"));
 			grade.setKor(Integer.parseInt(kor));
 			String math=(JOptionPane.showInputDialog("수학점수 입력"));
-			grade.setKor(Integer.parseInt(math));
+			grade.setMath(Integer.parseInt(math));
 			String eng=(JOptionPane.showInputDialog("영어점수 입력"));
-			grade.setKor(Integer.parseInt(eng));break;
+			grade.setEng(Integer.parseInt(eng));break;
 			
 			case "2" :
 				JOptionPane.showMessageDialog(null, "점수총합\n"+gradeService.getTotal(grade));

@@ -1,17 +1,17 @@
-package homework04_member;
+package study07;
 import javax.swing.JOptionPane;
 
 
 public class MemberController {
 	public static void main(String[] args) {
-		Member member = null;
+		MemberBean member = null;
 		MemberService service = new MemberService();
 		
 		while(true) {
 			switch(JOptionPane.showInputDialog("0.종료 1.Join 2.마이페이지 3.BMI")) {
 			case "0" : System.out.println("종료");return;
 			case "1" : 
-			member = new Member();
+			member = new MemberBean();
 			member.setId(JOptionPane.showInputDialog("ID입력"));
 			member.setPass(JOptionPane.showInputDialog("비번입력"));
 			member.setName(JOptionPane.showInputDialog("이름입력"));

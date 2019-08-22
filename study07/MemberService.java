@@ -1,7 +1,7 @@
-package homework04_member;
+package study07;
 
 public class MemberService {
-	public String getBmi(Member member) {
+	public String getBmi(MemberBean member) {
 	String name =member.getName();
 	String result = "";
 	String eval = "";
